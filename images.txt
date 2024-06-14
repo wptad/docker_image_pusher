@@ -1,1 +1,2 @@
 budibase/budibase
+jenkins/jenkins:lts-jdk11

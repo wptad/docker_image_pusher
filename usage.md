@@ -1,0 +1,1 @@
+docker pull registry.cn-zhangjiakou.aliyuncs.com/zlns/xxx
