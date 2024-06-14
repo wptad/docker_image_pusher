@@ -1,2 +1,3 @@
 budibase/budibase
 jenkins/jenkins:lts-jdk11
+jenkins/jnlp-agent-docker
