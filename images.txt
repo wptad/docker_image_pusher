@@ -1,3 +1,5 @@
 budibase/budibase
 jenkins/jenkins:lts-jdk11
 jenkins/jnlp-agent-docker
+library/node
+python:3.11.0
