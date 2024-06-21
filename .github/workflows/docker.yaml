@@ -157,7 +157,7 @@ jobs:
             
         done < images.txt
 
-        curl '$WECHAT_WEBHOOK_URL' \
+        curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=ed0facb3-86b4-452d-8cfa-0857127bdcc3' \
         -H 'Content-Type: application/json' \
         -d '
         {
