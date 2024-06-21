@@ -156,7 +156,7 @@ jobs:
             
         done < images.txt
 
-        curl '${WECHAT_WEBHOOK_URL}' \
+        curl '${secrets.WECHAT_WEBHOOK_URL}' \
         -H 'Content-Type: application/json' \
         -d '
         {
