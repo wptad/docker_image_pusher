@@ -3,5 +3,6 @@
 #jenkins/jnlp-agent-docker
 #library/node
 #python:3.11.9
-rayproject/ray:2.30.0-py311
+#rayproject/ray:2.30.0-py311
 #rayproject/ray-ml:latest-py311
+wptad/openresty
