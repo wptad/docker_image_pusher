@@ -6,4 +6,7 @@
 #rayproject/ray:2.30.0-py311
 #rayproject/ray-ml:latest-py311
 #wptad/openresty
-ghcr.io/wg-easy/wg-easy
+#ghcr.io/wg-easy/wg-easy
+prom/prometheus
+grafana/grafana
+prom/node-exporter
