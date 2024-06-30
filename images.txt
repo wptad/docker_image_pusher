@@ -7,6 +7,7 @@
 #rayproject/ray-ml:latest-py311
 #wptad/openresty
 #ghcr.io/wg-easy/wg-easy
-prom/prometheus
-grafana/grafana
-prom/node-exporter
+#prom/prometheus
+#grafana/grafana
+#prom/node-exporter
+ubuntu:24.10
