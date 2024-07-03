@@ -10,4 +10,5 @@
 #prom/prometheus
 #grafana/grafana
 #prom/node-exporter
-ubuntu:24.10
+#ubuntu:24.10
+budibase/budibase
