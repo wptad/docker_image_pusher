@@ -11,4 +11,5 @@
 #grafana/grafana
 #prom/node-exporter
 #ubuntu:24.10
-budibase/budibase
+#budibase/budibase
+openresty:alpine
