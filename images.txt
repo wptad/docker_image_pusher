@@ -12,4 +12,7 @@
 #prom/node-exporter
 #ubuntu:24.10
 #budibase/budibase
-openresty:alpine
+jenkins/jenkins:lts-jdk11
+jenkins/jnlp-agent-docker
+jenkins/inbound-agent
+#openresty:alpine
