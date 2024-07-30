@@ -12,7 +12,8 @@
 #prom/node-exporter
 #ubuntu:24.10
 #budibase/budibase
-jenkins/jenkins:lts-jdk11
-jenkins/jnlp-agent-docker
-jenkins/inbound-agent
+ollama/ollama
+#jenkins/jenkins:lts-jdk11
+#jenkins/jnlp-agent-docker
+#jenkins/inbound-agent
 #openresty:alpine
