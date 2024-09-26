@@ -37,5 +37,6 @@ ghcr.io/wg-easy/wg-easy
 #opensearchproject/opensearch:latest
 #opensearchproject/opensearch-dashboards:latest
 #myscale/myscaledb:1.6
-postgres:16
-fractalbitcoin/fractal:v0.2.1
+#postgres:16
+#fractalbitcoin/fractal:v0.2.1
+node:10-alpine
