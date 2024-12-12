@@ -41,3 +41,4 @@ ghcr.io/wg-easy/wg-easy
 #fractalbitcoin/fractal:v0.2.1
 #node:10-alpine
 #node:18.7-slim
+redis
