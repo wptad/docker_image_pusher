@@ -43,4 +43,5 @@ ghcr.io/wg-easy/wg-easy
 #node:18.7-slim
 #redis
 #mysql:8.0.27
-phpmyadmin
+#phpmyadmin
+etherpad/etherpad
