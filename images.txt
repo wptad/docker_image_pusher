@@ -51,6 +51,7 @@ ollama/ollama
 #node:18.7-slim
 #redis
 #mysql:8.0.27
+mysql:8.1.0
 #phpmyadmin
 #etherpad/etherpad
-ubuntu:22.04
+#ubuntu:22.04
