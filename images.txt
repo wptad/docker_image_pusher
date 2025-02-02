@@ -6,13 +6,13 @@
 #rayproject/ray:2.30.0-py311
 #rayproject/ray-ml:latest-py311
 #wptad/openresty
-ghcr.io/wg-easy/wg-easy
+#ghcr.io/wg-easy/wg-easy
 #prom/prometheus
 #grafana/grafana
 #prom/node-exporter
 #ubuntu:24.10
 #budibase/budibase
-#ollama/ollama
+ollama/ollama
 #jenkins/jenkins:lts-jdk11
 #jenkins/jnlp-agent-docker
 #jenkins/inbound-agent
@@ -44,4 +44,4 @@ ghcr.io/wg-easy/wg-easy
 #redis
 #mysql:8.0.27
 #phpmyadmin
-etherpad/etherpad
+#etherpad/etherpad
