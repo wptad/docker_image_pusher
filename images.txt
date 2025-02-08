@@ -56,4 +56,5 @@ mysql:8.0.0
 #etherpad/etherpad
 #ubuntu:22.04
 #sonatype/nexus3
-docker:dind    
+#docker:dind    
+coderaiser/cloudcmd
