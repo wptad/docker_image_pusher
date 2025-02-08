@@ -55,4 +55,5 @@ mysql:8.0.0
 #phpmyadmin
 #etherpad/etherpad
 #ubuntu:22.04
-sonatype/nexus3
+#sonatype/nexus3
+docker:dind    
