@@ -1,0 +1,38 @@
+name: Print Environment Variables
+
+on:
+  workflow_dispatch:  # 允许手动触发
+  push:
+    branches: [ main ]  # 当推送到 main 分支时触发
+
+env:
+  ALIYUN_REGISTRY: "${{ secrets.ALIYUN_REGISTRY }}"
+  ALIYUN_NAME_SPACE: "${{ secrets.ALIYUN_NAME_SPACE }}"
+  ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
+  ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
+  WECHAT_WEBHOOK_URL: "${{ secrets.WECHAT_WEBHOOK_URL }}"
+
+jobs:
+  print-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Specific Environment Variables (Plain Text)
+        run: |
+          echo "ALIYUN_REGISTRY: $ALIYUN_REGISTRY"
+          echo "ALIYUN_NAME_SPACE: $ALIYUN_NAME_SPACE"
+          echo "ALIYUN_REGISTRY_USER: $ALIYUN_REGISTRY_USER"
+          echo "WECHAT_WEBHOOK_URL: $WECHAT_WEBHOOK_URL"
+
+      - name: Print Specific Environment Variables (Hex)
+        run: |
+          echo "ALIYUN_REGISTRY (hex):"
+          echo "$ALIYUN_REGISTRY" | xxd -ps | cut -c1-100
+          echo -e "\nALIYUN_NAME_SPACE (hex):"
+          echo "$ALIYUN_NAME_SPACE" | xxd -ps | cut -c1-100
+          echo -e "\nALIYUN_REGISTRY_USER (hex):"
+          echo "$ALIYUN_REGISTRY_USER" | xxd -ps | cut -c1-100
+          echo -e "\nWECHAT_WEBHOOK_URL (hex):"
+          echo "$WECHAT_WEBHOOK_URL" | xxd -ps | cut -c1-100
+          
+      - name: Print All Environment Variables (Original)
+        run: env 
