@@ -11,6 +11,7 @@ env:
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
   WECHAT_WEBHOOK_URL: "${{ secrets.WECHAT_WEBHOOK_URL }}"
+  TEST: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
 
 jobs:
   print-env:
@@ -22,6 +23,7 @@ jobs:
           echo "ALIYUN_NAME_SPACE: $ALIYUN_NAME_SPACE"
           echo "ALIYUN_REGISTRY_USER: $ALIYUN_REGISTRY_USER"
           echo "WECHAT_WEBHOOK_URL: $WECHAT_WEBHOOK_URL"
+          echo "TEST: $TEST"
 
       - name: Print Specific Environment Variables (Hex)
         run: |
@@ -33,6 +35,7 @@ jobs:
           echo "$ALIYUN_REGISTRY_USER" | xxd -ps | cut -c1-100
           echo -e "\nWECHAT_WEBHOOK_URL (hex):"
           echo "$WECHAT_WEBHOOK_URL" | xxd -ps | cut -c1-100
+          echo "TEST: " | xxd -ps
           
       - name: Print All Environment Variables (Original)
         run: env 

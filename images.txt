@@ -57,4 +57,4 @@ mysql:8.0.0
 #ubuntu:22.04
 #sonatype/nexus3
 #docker:dind    
-coderaiser/cloudcmd
+#coderaiser/cloudcmd
