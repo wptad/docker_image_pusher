@@ -27,6 +27,8 @@ jobs:
 
       - name: Print Specific Environment Variables (Hex)
         run: |
+          echo -n "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}" | xxd -ps
+          echo -n "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
           echo "ALIYUN_REGISTRY (hex):"
           echo "$ALIYUN_REGISTRY" | xxd -ps | cut -c1-100
           echo -e "\nALIYUN_NAME_SPACE (hex):"
@@ -35,7 +37,6 @@ jobs:
           echo "$ALIYUN_REGISTRY_USER" | xxd -ps | cut -c1-100
           echo -e "\nWECHAT_WEBHOOK_URL (hex):"
           echo "$WECHAT_WEBHOOK_URL" | xxd -ps | cut -c1-100
-          echo "TEST: " | xxd -ps
           
       - name: Print All Environment Variables (Original)
         run: env 
