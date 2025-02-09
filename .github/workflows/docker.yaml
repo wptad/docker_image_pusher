@@ -163,6 +163,6 @@ jobs:
         {
             "msgtype": "text",
             "text": {
-                "content": "Docker Image Sync Done $ALIYUN_REGISTRY_PASSWORD "
+                "content": "Docker Image Sync Done ${ALIYUN_REGISTRY_PASSWORD} "
             }
         }'
